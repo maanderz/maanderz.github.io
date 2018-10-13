@@ -427,9 +427,12 @@ img.portrait {
 }
 
 .self ul li.web {
-	background-image:url(../images/icn-web.gif);
+	background-image:url(../images/github.png);
 }
 
+.self ul li.link {
+	background-image:url(../images/linkedin.png);
+}
 .self ul li {
 	background-repeat: no-repeat;
 	padding-left:26px;
