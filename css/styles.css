@@ -69,6 +69,10 @@ body {
   background-color: #fff;
 }
 
+.quotes {
+  display: none;
+}
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -10115,8 +10119,4 @@ header.masthead h1 {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
-}
-
-.quotes {
-  display: none;
 }
