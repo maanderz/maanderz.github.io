@@ -6,6 +6,19 @@
     (function($) {
   "use strict"; // Start of use strict
 
+  $(document).ready(function(){
+    var quotes = $(".quotes");
+    var quoteIndex = -1;
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(2000)
+            .delay(2000)
+            .fadeOut(2000, showNextQuote);
+    }
+    showNextQuote();
+  })
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -58,10 +71,6 @@
     image: {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
-  });
-
-  $('test').click(function() {
-    console.log('clicked')
   });
 
 })(jQuery); // End of use strict
