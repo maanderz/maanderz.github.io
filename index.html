@@ -50,8 +50,12 @@
                     <hr class="divider my-4" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="quotes text-white-75 font-weight-light mb-5">first quote</p>
-                    <p class="quotes text-white-75 font-weight-light mb-5">second quote</p>
+                    <p class="quotes text-white-75 font-weight-light mb-5">Self-driven, professional, team player, with a strong focus on learning
+                        new technologies, who adapts quickly in a fast paced environment,
+                        and loves solving difficult problems.</p>
+                    <p class="quotes text-white-75 font-weight-light mb-5">I love spending time with my animals, Skylar and Qoo.</p>
+                    <p class="quotes text-white-75 font-weight-light mb-5">Cooking is another passion of mine.</p>
+                    <p class="quotes text-white-75 font-weight-light mb-5">If you can't find me, I'm most likely wandering the vast outdoors.</p>
                 </div>
             </div>
         </div>
@@ -219,7 +223,7 @@
             function showNextQuote() {
                 ++quoteIndex;
                 quotes.eq(quoteIndex % quotes.length)
-                    .fadeIn(2000)
+                    .slideInLeft(2000)
                     .delay(2000)
                     .fadeOut(2000, showNextQuote);
             }
