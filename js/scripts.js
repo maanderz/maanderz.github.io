@@ -60,4 +60,8 @@
     }
   });
 
+  $('test').click(function() {
+    console.log('clicked')
+  });
+
 })(jQuery); // End of use strict
